@@ -20,6 +20,8 @@ public class Person implements Serializable {
         this.firstname = firstname;
     }
 
+    private String imageUrl;
+
     @Column(name = "lastName")
     private String lastName;
 
@@ -39,6 +41,14 @@ public class Person implements Serializable {
     private String sex;
 
     public Person() {
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public Long getId() {
